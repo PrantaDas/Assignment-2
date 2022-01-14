@@ -63,7 +63,7 @@ Banner Part
     align-items: flex-start;
 }
 .banner-left h1{
-    font-size: 40px;
+    font-size: 40px;    
 }
 .banner-left p{
     text-align: justify;
@@ -98,8 +98,8 @@ main{
     position: relative;
 }
 .section-title {
-   text-align:center ; 
-   margin-top: 80px;
+    text-align:center ; 
+    margin-top: 80px;
 }
 .item{
     display: flex;
@@ -145,9 +145,10 @@ Optional Part
      margin-top: 200px;
  }
  .left-part img{
-    min-height: 255px;
-    min-width: 300px;
-    border-radius: 8px;
+    height: 280px;
+    width: 360px;
+    /* border-radius: 8px; */
+    object-fit: cover;
  }
  .right-part{
      display: flex;
@@ -192,4 +193,39 @@ footer{
 .social-media li a{
     color: white;
     margin-left: 10px;
+}
+.section-title{
+    position: relative;
+    white-space: nowrap;
+}
+
+
+
+.border{
+    background-color: black;
+    position: absolute;
+}
+.border.top, .border.bottom{
+    width: 350px;
+    height: 4px;
+}
+.border.right, .border.left{
+    width: 4px;
+    height: 270px;
+}
+.border.top{
+    top: 5px;
+    right: 100%;
+}
+.border.bottom{
+    bottom: 5px;
+    left: 100%;
+}
+.border.left{
+    left: 5px;
+    top: 100%;
+}
+.border.right{
+    right: 5px;
+    bottom: 100%;
 }
