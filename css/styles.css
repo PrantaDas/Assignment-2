@@ -25,12 +25,13 @@ body{
 Header part
 ===================== */
 header{
-    height: 100px;
+    
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 .site-name{
     margin-top: 10px;
@@ -49,6 +50,46 @@ nav{
     color: black;
     padding: 10px 10px;
 }
-.fas{
-    font-size: 25px;
+/* ============
+Banner Part
+============== */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.banner-left h1{
+    font-size: 40px;
+}
+.banner-left p{
+    text-align: justify;
+    line-height: 1.5;
+}
+.btn-style{
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color:#E02C6D ;
+    color: white;
+    cursor: pointer;
+}
+.banner-right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 45px;
+}
+.banner-right img{
+    height: 380px;
+    width: 380px;
 }
