@@ -97,9 +97,26 @@ Product Part
 main{
     position: relative;
 }
-.section-title {
-    text-align:center ; 
-    margin-top: 80px;
+.section-title{
+    display: flex;
+    justify-content: center;
+}
+.section-title h2{
+    color: #E02C6D;
+    font-size: 40px;
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 10s infinite ease-in-out;
+    border-right: 5px solid deeppink;
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 18ch;
+    }
 }
 .item{
     display: flex;
@@ -145,9 +162,11 @@ Optional Part
      margin-top: 200px;
  }
  .left-part img{
-    height: 280px;
-    width: 360px;
-    /* border-radius: 8px; */
+    /* width: 450px;
+    height: 280px; */
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
     object-fit: cover;
  }
  .right-part{
@@ -194,38 +213,11 @@ footer{
     color: white;
     margin-left: 10px;
 }
-.section-title{
-    position: relative;
-    white-space: nowrap;
-}
 
 
 
-.border{
-    background-color: black;
-    position: absolute;
-}
-.border.top, .border.bottom{
-    width: 350px;
-    height: 4px;
-}
-.border.right, .border.left{
-    width: 4px;
-    height: 270px;
-}
-.border.top{
-    top: 5px;
-    right: 100%;
-}
-.border.bottom{
-    bottom: 5px;
-    left: 100%;
-}
-.border.left{
-    left: 5px;
-    top: 100%;
-}
-.border.right{
-    right: 5px;
-    bottom: 100%;
-}
+
+
+
+
+
